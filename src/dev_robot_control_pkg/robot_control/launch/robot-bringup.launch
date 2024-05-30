@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<launch>
+    <node name="robot_control" pkg="robot_control" type="robot_control.py"> </node>
+    <node name="imu_data_node" pkg="robot_control" type="mpu9250.py"></node>
+    <include file="$(find sick_tim)/launch/sick_tim551_2050001.launch"/> 
+</launch>
